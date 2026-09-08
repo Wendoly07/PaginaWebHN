@@ -1,0 +1,1533 @@
+body {
+  margin: 0;
+  font-family: 'HelveticaRounded', Arial, sans-serif;
+  background: #fff;
+}
+
+/* Encabezado azul superior */
+header {
+  background: #034ea2;
+  color: white;
+  padding: 0;
+  position: relative;
+  height: 100px;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px 0;
+  width: 90%;
+  /* más ancho */
+  margin: 0 auto;
+}
+
+.top-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.top-menu a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Cuadro naranja con logo y navegación */
+.main-header {
+  background-color: #ff7e00;
+  border-radius: 15px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  width: 60%;
+  /* más angosto que el azul */
+  margin: 10px auto 20px;
+  /* sube 40px (la mitad) para que quede mitad en azul, mitad afuera */
+  position: relative;
+  z-index: 2;
+}
+
+.orange-header {
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  width: 60%;
+  margin: -40px auto 0 auto;
+  /* Esto lo sube hacia arriba a la mitad */
+  z-index: 2;
+  position: relative;
+  border-radius: 10px;
+}
+
+/* Tamaño del logo*/
+.main-header .logo img {
+  height: 120px;
+}
+
+/* Estilos base para .nav-menu a */
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Subrayado animado */
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+/* Hover */
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* Hero principal naranja body */
+.hero {
+  background: linear-gradient(to bottom, #ff6700, #ff9c00);
+  color: white;
+  padding: 60px 5%;
+  text-align: left;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 320px;
+  /* Más alto */
+}
+
+/* Texto principal */
+.hero h1 {
+  font-size: 48px;
+  /* Más grande */
+  font-weight: 900;
+  /* Súper grueso */
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  /* Blanco para contraste */
+}
+
+/* Horarios */
+.hero .horarios {
+  font-size: 36px;
+  /* Más grande */
+  font-weight: 800;
+  color: #003399;
+  /* Azul corporativo */
+  margin-bottom: 20px;
+}
+
+.hero .boton {
+  background-color: #fff200;
+  /* Amarillo SIEMPRE */
+  color: #003399;
+  /* Letras azules */
+  padding: 16px 36px;
+  /* Botón grande */
+  border: none;
+  border-radius: 12px;
+  /* Bordes redondeados */
+  font-weight: 900;
+  /* Texto grueso */
+  font-size: 20px;
+  /* Texto más grande */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.hero .boton:hover {
+  transform: scale(1.05);
+  /* Efecto de agrandar */
+}
+
+/* Contenedor del texto: mover hacia la derecha */
+.texto-hero {
+  max-width: 650px;
+  margin-left: 80px;
+  /* 🔹 Ajusta este valor para moverlo */
+}
+
+/* Texto principal */
+.hero h1 {
+  font-size: 55px;
+  /* Más grande */
+  font-weight: 920;
+  /* Súper grueso */
+  line-height: 1.3;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  /* Blanco para contraste */
+}
+
+/* Horarios */
+.hero .horarios {
+  font-size: 41px;
+  /* Más grande */
+  font-weight: 820;
+  color: #003399;
+  /* Azul corporativo */
+  margin-bottom: 20px;
+}
+
+.hero .boton {
+  background-color: #fff200;
+  /* Amarillo */
+  color: #003399;
+  /* Azul */
+  padding: 16px 36px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  /* ✅ Quita la raya */
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.hero .boton:hover {
+  transform: scale(1.08);
+  background-color: #ffe600;
+  /* Amarillo más intenso al pasar el mouse */
+}
+
+/* Contenedor del texto: mover hacia la derecha */
+.texto-hero {
+  max-width: 650px;
+  margin-left: 80px;
+  /*  Ajusta este valor para moverlo */
+}
+
+.hero img {
+  max-height: 380px;
+  /* Antes 280px, ahora más grande */
+  width: auto;
+  /* Mantiene proporción */
+  position: relative;
+  right: 0;
+}
+
+.hero img.modelo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;
+  /* este valor limita la altura */
+}
+
+.resultados,
+.youtube,
+.promo,
+.noticias,
+.footer,
+.rse {
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.resultados-box {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 95%;
+  max-width: 1400px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+  /* importante para que .proximo se posicione dentro */
+  padding-bottom: 60px;
+  /* espacio para que no tape las tarjetas */
+  transition: transform 0.3s ease;
+  /* movimiento suave */
+  position: relative;
+  /* necesario para moverlo */
+}
+
+/* ===== TÍTULO ===== */
+.resultados-header h2 {
+  font-size: 36px;
+  /* Tamaño del texto, cámbialo a tu gusto */
+  font-weight: bold;
+  /* Más grosor */
+  display: block;
+  /* Asegura que ocupe toda la línea */
+  width: 100%;
+  /* Ancho completo del contenedor */
+  text-align: center;
+  /* Centrado, opcional */
+}
+
+.titulo-naranja {
+  color: orange;
+  /* Mantiene tu color original */
+}
+
+.titulo-azul {
+  color: blue;
+  /* Mantiene tu color azul */
+}
+
+/* ===== CARRUSEL ===== */
+/* Carrusel */
+.resultados-carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px; /* agrega espacio interno hacia abajo */
+}
+
+/* Flechas */
+.res-prev,
+.res-next {
+  background: #ff7e00;
+  color: white;
+  border: none;
+  font-size: 28px;
+  padding: 10px 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.res-prev:hover,
+.res-next:hover {
+  background: #ff7e00;
+}
+
+/* ===== TARJETAS ===== */
+/* Contenedor de tarjetas en el carrusel */
+/* Contenedor de tarjetas (carrusel) */
+/* Contenedor de tarjetas */
+.res-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+  /* siempre lado a lado */
+}
+
+/* Tarjeta base */
+.res-card {
+  width: 200px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* COLORES PERSONALIZADOS */
+.res-card.verde {
+  background: #aeca36;
+}
+
+.res-card.naranja {
+  background: #e31f26;
+}
+
+.res-card.roja {
+  background-color: #e31f26;
+  /* Rojo oficial */
+  color: #fff;
+  /* Texto blanco para contraste */
+}
+
+.res-card.roja h4 {
+  color: #fff;
+}
+
+.res-card.roja .btn-jugar,
+.res-card.roja .btn-info {
+  background: transparent;
+  /* igual que Diaria */
+  color: white;
+  /* texto blanco */
+  border: 2px solid white;
+  /* borde igual que Diaria */
+  font-weight: bold;
+}
+
+/* Hover para tarjeta roja */
+.res-card.roja .btn-jugar:hover,
+.res-card.roja .btn-info:hover {
+  background: white;
+  /* Fondo blanco al pasar el mouse */
+  color: #e31f26;
+  /* Texto rojo */
+  transition: 0.3s ease;
+  /* Suave transición */
+}
+
+/* Botones más pequeños y alineados al centro */
+.res-card .btn-jugar,
+.res-card .btn-info {
+  padding: 4px 38px;
+  /* reduce tamaño */
+  font-size: 11px;
+  /* texto más pequeño */
+  display: inline-block;
+  /* asegura que se mantengan en línea */
+  margin-right: 5px;
+  /* espacio entre botones */
+  vertical-align: middle;
+  /* alineación vertical */
+  align-items: center;
+  
+}
+
+/* Elimina margen innecesario al último botón */
+.res-card .btn-info {
+  margin-right: 0;
+}
+
+.btn-info {
+  margin-top: 4px;
+  /* mueve el botón 4px hacia abajo */
+}
+
+/* Clase que aplicaremos cuando hagas scroll */
+.scroll-up {
+  transform: translateY(-3cm);
+  /* sube 3 cm */
+}
+
+/* Imagen */
+/* Aumentar tamaño de las imágenes del carrusel */
+.res-card img {
+  width: 230px;
+  /* ancho fijo más grande */
+  height: auto;
+  /* mantiene proporción */
+  display: block;
+  margin: 0 auto;
+  /* centra la imagen dentro de la tarjeta */
+}
+
+/* Opcional: aumentar tamaño de la tarjeta para que se vea bien */
+.res-card {
+  width: 290px;
+  /* ancho de la tarjeta más grande */
+  padding: 15px;
+}
+
+.res-card .btn-container {
+    display: flex;           /* Los botones alineados horizontalmente */
+    justify-content: center; /* Centra los botones dentro del contenedor */
+    margin-top: 10px;        /* Espacio arriba de los botones */
+    gap: 10px;               /* Espacio entre los botones */
+}
+
+/* Contenedor de números */
+.numeros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  margin-top: -10px;   /* sube las esferas */
+}
+
+/* Esferas generales */
+.numeros span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* Esferas verdes (Diaria) */
+.bola-verde {
+  background-color: #438f4f;
+  color: white;
+}
+
+/* Esferas amarillas (Súper Premio) */
+.bola-amarilla {
+  background-color: #fdd835;
+  color: black;
+}
+
+/* ===== BOTONES EN FILA ===== */
+.btn-group {
+  display: flex;
+  justify-content: center;
+  /* centrado horizontal */
+  gap: 6px;
+  /* espacio pequeño entre botones */
+  margin-top: 8px;
+}
+
+.btn-jugar,
+.btn-info {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 12px;
+  /* más pequeño */
+  font-weight: bold;
+  padding: 4px 10px;
+  /* reduce espacio interno */
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-jugar:hover,
+.btn-info:hover {
+  background: white;
+  /* Fondo que aparece al pasar el mouse */
+  color: #e31f26;
+  /* Texto rojo */
+}
+
+.btn-jugar,
+.btn-info {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 15px;
+  font-size: 12px;
+  /* más pequeño */
+  font-weight: bold;
+  padding: 4px 10px;
+  /* reduce espacio interno */
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-jugar:hover,
+.btn-info:hover {
+  background: white;
+  color: #333;
+}
+
+/* Hover: Fondo blanco, texto oscuro */
+.btn-jugar:hover,
+.btn-info:hover {
+  background: white;
+  color: #333;
+}
+
+/* Pegamos el texto abajo */
+.proximo {
+  background-color: #ff7e00;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 0 0 12px 12px;
+  position: absolute;
+  /* posición absoluta */
+  bottom: 0;
+  /* lo llevamos al fondo */
+  left: 0;
+  width: 100%;
+  /* ocupa todo el ancho */
+  margin: 0;
+}
+
+.azul {
+  color: #007bff;
+  /* el mismo azul que la fecha */
+  font-weight: bold;
+  /* opcional */
+}
+
+/* Ajuste responsive global */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HEADER */
+@media (max-width: 992px) {
+  .main-header {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .main-header .logo img {
+    height: 80px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    margin: 10px 0;
+    gap: 10px;
+  }
+
+  .play-button a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+/* HERO */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 5%;
+  }
+
+  .hero img {
+    max-height: 200px;
+    margin-top: 15px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+/* CARRUSEL DE RESULTADOS */
+@media (max-width: 768px) {
+  .resultados-carousel {
+    flex-direction: column;
+  }
+
+  .res-cards {
+    display: flex;
+    overflow-x: auto;
+    /* Scroll horizontal */
+    gap: 10px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    /* Carrusel táctil */
+  }
+
+  .res-card {
+    flex: 0 0 80%;
+    max-width: 400px;
+    scroll-snap-align: center;
+  }
+
+  /* Estilos base para flechas */
+  .res-prev,
+  .res-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #ff7f00, #ff5500);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  /* Hover animado */
+  .res-prev:hover,
+  .res-next:hover {
+    background: linear-gradient(135deg, #ff9d00, #ff6700);
+    transform: translateY(-50%) scale(1.15);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Posiciones */
+  .res-prev {
+    left: 10px;
+  }
+
+  .res-next {
+    right: 10px;
+  }
+
+  /* SVG ajuste */
+  .res-prev svg,
+  .res-next svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+}
+
+/* NOTICIAS */
+@media (max-width: 768px) {
+  .noticias-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .noticias-left {
+    text-align: center;
+  }
+
+  .noticias-right {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .carousel {
+    display: flex;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    min-width: 250px;
+    scroll-snap-align: start;
+  }
+}
+
+/* FOOTER */
+@media (max-width: 768px) {
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tarjeta {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.youtube {
+  background: #0047b2;       /* color azul de fondo */
+  color: white;
+  padding: 40px 0;           /* vertical: 40px, horizontal: 0 */
+  width: 100vw;               /* ocupa todo el ancho de la pantalla */
+  box-sizing: border-box;
+}
+
+.youtube-inner {
+  width: 100%;               /* ocupa todo el ancho */
+  max-width: none;           /* quita cualquier límite de ancho */
+  margin: 0;                 /* sin margen centrado */
+  padding: 0 2%;             /* un pequeño padding interno opcional */
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* centra contenido horizontalmente */
+  gap: 30px;
+}
+
+.youtube-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* centra los elementos en la fila */
+  gap: 20px;
+  width: 100%;               /* ocupa todo el ancho disponible */
+}
+
+.youtube-video {
+  flex: 1 1 500px;           /* ancho mínimo del video, se adapta */
+  max-width: 700px;          /* opcional: no se haga demasiado grande */
+}
+
+.youtube-text {
+  flex: 1 1 300px;           /* ancho mínimo del texto */
+  max-width: 500px;          /* opcional */
+  background: #ff8000;       /* fondo naranja */
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+}
+
+/* --- Contenedor Noticias --- */
+.noticias-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 16px;
+  padding: 25px;
+  width: 90%;
+  max-width: 1400px;
+  margin: 40px auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  height: auto; /* más flexible */
+  align-items: stretch;
+  overflow: visible;
+  position: relative;
+}
+
+/* Columna izquierda */
+.noticias-left {
+  flex: 0 0 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;  /* ⬅ alineado a la izquierda */
+  text-align: left;
+  background: transparent; /*  SIN fondo azul */
+  border-radius: 0;
+  padding: 10px 10px 10px 0;
+  box-shadow: none;
+}
+
+.noticias-left h3 {
+  font-size: 38px;        /*  MÁS GRANDE */
+  font-weight: 900;      /*  MÁS BOLD */
+  color: #0047b2;        /*  AZUL */
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-left: 6px solid #ff7e00;
+  padding-left: 14px;
+}
+
+.noticias-boton {
+  margin: 0 auto; /* ✅ CENTRADO PERFECTO */
+  background: linear-gradient(135deg, #ff7e00, #ff5500);
+  color: white;
+  border: none;
+  padding: 14px 34px;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  display: block;
+}
+
+.noticias-boton:hover {
+  transform: scale(1.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+}
+
+/* Carrusel */
+.noticias-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /*  mantenemos el recorte del carrusel */
+  min-width: 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  overflow: visible; /* permite que las tarjetas sobresalgan dentro del carrusel */
+  padding-top: 25px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: calc(100% / 3 - 15px);
+  max-width: 340px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  height: 440px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 0;
+  cursor: pointer; /*  hace toda la tarjeta clickeable/hover */
+}
+
+.card:hover {
+  transform: translateY(-40px) scale(1.04);  /*  ~2cm hacia arriba */
+  z-index: 999;                               /*  queda por encima de TODO */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* IMPORTANTE: aseguramos que la imagen no bloquee el hover */
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  image-rendering: auto;
+  filter: contrast(1.05) saturate(1.1);
+  display: block;
+  pointer-events: none;
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+  padding: 18px;
+  color: white;
+  height: 100%;
+}
+
+/* Tarjetas impares → naranja (#ff7e00) */
+.carousel .card:nth-child(odd) .card-content {
+  background: #ff7e00;
+}
+
+/* Tarjetas pares → azul (#0047b2) */
+.carousel .card:nth-child(even) .card-content {
+  background: #0047b2;
+}
+
+.card-content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* Flechas */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 126, 0, 0.95);
+  color: white;
+  border: none;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  z-index: 999;   /*  AHORA NUNCA QUEDAN DETRÁS */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.prev { left: 10px; }   /*  YA NO quedan afuera */
+.next { right: 10px; }
+
+.prev:hover,
+.next:hover {
+  background: #ff5500;
+  transform: translateY(-50%) scale(1.12);
+}
+
+/* Indicadores */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.carousel-indicators span {
+  width: 12px;
+  height: 12px;
+  background: #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.carousel-indicators span.active {
+  background: #ff7e00;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  .card {
+    width: calc(100% / 2 - 15px); /* 2 tarjetas */
+  }
+}
+
+@media (max-width: 768px) {
+  .noticias-box {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .noticias-left {
+    flex: 0 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .card {
+    width: 100%; /* 1 tarjeta por fila */
+    max-width: none;
+    height: auto;
+  }
+
+  .card img {
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.rse {
+  background: #9647a5;
+  color: white;
+  padding: 20px 20px 15px 20px;
+  /* reduce el padding superior e inferior */
+  margin-bottom: 1.5cm;
+}
+
+.rse-content {
+  display: flex;
+  justify-content: center;
+  /* centra todo horizontalmente */
+  align-items: center;
+  /* centra verticalmente */
+  flex-wrap: wrap;
+  gap: 30px;
+  /* espacio entre texto y la imagen */
+}
+
+.rse-text {
+  text-align: center;
+  max-width: 600px;
+}
+
+.numero {
+  font-size: 120px;
+  /* más grande que antes */
+  font-weight: bold;
+  margin: 0 auto 10px auto;
+  background: transparent;
+  display: inline-block;
+  padding: 15px 30px;
+  /* relleno proporcional al tamaño */
+  border-radius: 15px;
+}
+
+.rse-text p {
+  font-size: 25px;
+  /* texto más grande */
+  line-height: 1.5;
+  /* un poco más aireado */
+}
+
+.rse-image {
+  position: relative;
+  left: 60px;
+  /* mueve a la derecha */
+  top: -20px;
+  /* mueve hacia arriba */
+}
+
+.rse-image img {
+  border: 2px solid orange;
+  border-radius: 20px;
+  /* bordes redondeados */
+  width: 400px;
+  /* ancho deseado */
+  height: auto;
+  /* mantiene proporción */
+  position: relative;
+  top: -30px;
+  /* mover hacia arriba */
+  margin-left: 90px;
+  /* mover a la derecha */
+}
+
+/* Botón */
+.boton-container {
+  text-align: center;
+  margin-top: 1px;
+  /* menos espacio hacia arriba */
+  position: relative;
+  top: 30px;
+  /* baja un poquito, sin alargar mucho la franja */
+}
+
+.rse-boton {
+  background: #ff7e00;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-size: 18px;
+  /* más pequeño que 20px */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.rse-boton:hover {
+  background: #ff7e00;
+  transform: scale(1.05);
+}
+
+.footer {
+  background: #003399;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /* pega arriba */
+  margin-top: -20px;
+  /* sube todo el bloque */
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
+}
+
+.footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Bloque derecho con columnas centradas */
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  /* CENTRAR columnas */
+}
+
+.footer-columns {
+  display: flex;
+  gap: 80px;
+  /* Espacio entre columnas */
+}
+
+.footer-column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-column p:hover {
+  text-decoration: underline;
+  color: #ffcc00;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left {
+    margin-bottom: -60px;
+    align-items: center;
+    flex: unset;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .footer-columns {
+    flex: 1;
+    display: flex;
+    gap: 80px;
+    /* Más espacio entre columnas */
+    flex-wrap: wrap;
+    justify-content: center;
+    /* CENTRAMOS LAS COLUMNAS */
+    align-items: flex-start;
+    max-width: 900px;
+    /* Evita que se vayan muy a la derecha */
+    margin: 0 auto;
+    /* Las centra dentro del footer */
+  }
+}
+
+/* Ajuste del segundo encabezado (main-header) */
+@media (max-width: 992px) {
+  .main-header {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 15px;
+    width: 90%;
+  }
+
+  .main-header .logo img {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .play-button a {
+    display: inline-block;
+    background-color: #0072bc;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+}
+
+/* Ajuste para sección RSE */
+@media (max-width: 768px) {
+  .rse-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .numero {
+    font-size: 60px;
+    /* Reducimos tamaño en móvil */
+    padding: 10px 20px;
+  }
+
+  .rse-text p {
+    font-size: 20px;
+  }
+}
+
+/* Efecto botón para el menú superior */
+.top-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 8px 14px;
+  /* Espacio extra para parecer botón */
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.top-menu a:hover {
+  background-color: #ff9d00;
+  /* Naranja */
+  color: #fff;
+  transform: scale(1.05);
+  /* Ligeramente más grande */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón JUGAR EN LÍNEA */
+/* Botón JUGAR EN LÍNEA con imagen */
+.play-button a {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-button img {
+  max-width: 220px;
+  /* controla el ancho de la imagen/botón */
+  height: auto;
+  display: block;
+  border-radius: 50px;
+  /* conserva look moderno (opcional) */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animado */
+.play-button a:hover img {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Click */
+.play-button a:active img {
+  transform: scale(0.95);
+}
+
+.resultados-header h2 {
+  font-size: 24px;
+  /* Más grande que el original */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.titulo-naranja {
+  color: #ff7f00 !important;
+  /* Naranja fuerte */
+}
+
+.titulo-azul {
+  color: #003399 !important;
+  /* Azul */
+}
+
+/* ====== ESTILOS PARA DIARIA ====== */
+.diaria-page {
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.diaria-ganador {
+  background: #7dc242;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.diaria-ganador h2 {
+  margin-bottom: 15px;
+}
+
+.diaria-numeros {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.diaria-numeros span {
+  display: inline-block;
+  background: white;
+  color: #7dc242;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.proximo-sorteo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.diaria-anteriores {
+  background: #f5f5f5;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.diaria-anteriores h3 {
+  color: #003399;
+  margin-bottom: 15px;
+}
+
+.diaria-resultados p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.diaria-como-jugar {
+  background: #fff;
+  border: 2px solid #ddd;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.diaria-como-jugar h3 {
+  color: #003399;
+  margin-bottom: 10px;
+}
+
+.btn-reglamento {
+  background: #ff7f00;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-reglamento:hover {
+  background: hsl(20, 100%, 50%);
+}
+
+.banner-superpremio {
+  width: 95%;
+  /* similar a resultados-box */
+  max-width: 1400px;
+  /* límite ancho en pantallas grandes */
+  margin: 40px auto;
+  /* lo centra y da espacio */
+  border-radius: 12px;
+  /* esquinas redondeadas */
+  overflow: hidden;
+  /* para que respete el borde redondeado */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  /* sombra sutil */
+  text-align: center;
+}
+
+.banner-superpremio img {
+  width: 100%;
+  /* ocupa todo el contenedor */
+  height: auto;
+  display: block;
+}
+
+.banner-apostemos {
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* Centra horizontal */
+    align-items: center;        /* Centra vertical si hay altura */
+    margin: 20px 0;
+}
+
+.banner-apostemos img {
+    width: 80%;                 /* Ajustá el tamaño como querás */
+    max-width: 600px;           /* Tamaño máximo opcional */
+    height: auto;
+    border-radius: 20px;        /* BORDES REDONDOS */
+    display: block;
+}
+
+
+
+
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  position: relative;
+  top: -40px;
+  /* ajusta el valor */
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.footer-extra-logo {
+  max-width: 120px;
+  /* ajusta el tamaño */
+  height: auto;
+}
+
+.social-icons img {
+  cursor: pointer;
+  /* mano al pasar encima */
+}
+
+.esfera {
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

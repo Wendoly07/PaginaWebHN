@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.11 33.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f08124;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-size: 12.58px;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-4 {
+        font-family: BebasNeue-Regular, 'Bebas Neue';
+        font-size: 11.21px;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <g>
+      <rect class="cls-1" width="106.11" height="33.53" rx="8" ry="8"/>
+      <g>
+        <path class="cls-2" d="M21.09,21.45H7.83c-.82,0-1.49-.67-1.49-1.49v-5.65h13.74v-3.26H6.34v-.66c0-.82.67-1.49,1.49-1.49h12.25v-.72H7.83c-1.22,0-2.21.99-2.21,2.21v9.58c0,1.22.99,2.21,2.21,2.21h13.59c-.11-.23-.22-.47-.33-.72Z"/>
+        <rect class="cls-2" x="8.11" y="16.52" width="2.97" height="2.17" rx=".43" ry=".43"/>
+        <path class="cls-2" d="M17.72,16.88c0-.2-.16-.36-.36-.36h-4.78c-.2,0-.36.16-.36.36s.16.36.36.36h4.78c.2,0,.36-.16.36-.36Z"/>
+        <path class="cls-2" d="M12.57,17.96c-.2,0-.36.16-.36.36s.16.36.36.36h2.54c.2,0,.36-.16.36-.36s-.16-.36-.36-.36h-2.54Z"/>
+        <rect class="cls-2" x="20.06" y="8.18" width=".02" height=".72"/>
+        <rect class="cls-2" x="20.06" y="11.05" width=".02" height="3.26"/>
+        <path class="cls-2" d="M30.38,3.75c-5.02,0-9.59,2.73-9.59,2.73v9.47c0,10.34,9.59,12.08,9.59,12.08,0,0,9.59-1.74,9.59-12.08V6.48s-4.57-2.73-9.59-2.73ZM29.39,19.71l-4.3-4.3,1.65-1.65,2.65,2.65,4.49-4.49,1.65,1.65-6.15,6.15Z"/>
+      </g>
+      <text class="cls-3" transform="translate(42.86 16.29)"><tspan class="cls-7" x="0" y="0">T</tspan><tspan x="7.33" y="0">A</tspan><tspan class="cls-9" x="16.97" y="0">R</tspan><tspan x="26.09" y="0">JE</tspan><tspan class="cls-5" x="41.34" y="0">T</tspan><tspan class="cls-8" x="48.67" y="0">A</tspan></text>
+      <text class="cls-4" transform="translate(42.48 25.48)"><tspan x="0" y="0">CREDI</tspan><tspan class="cls-6" x="19.59" y="0">T</tspan><tspan x="23.62" y="0">O O DEBI</tspan><tspan class="cls-6" x="51.48" y="0">T</tspan><tspan x="55.52" y="0">O</tspan></text>
+    </g>
+  </g>
+</svg>
